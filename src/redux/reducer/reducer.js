@@ -2,7 +2,7 @@ const initialState = {
   fillPercentage: 0,
 };
 
-function reducer(action, state = initialState) {
+function reducer(state = initialState, action = {}) {
   if (action.type === 'INCREMENT') {
     return { ...state, fillPercentage: Math.min(state.fillPercentage + 20, 100) }; // 최대 100%까지 채우기
   }

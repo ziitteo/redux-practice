@@ -47,6 +47,7 @@ function App() {
             />
           </svg>
         </div>
+        <p className='percentage'>{fillPercentage}%</p>
         <div className='button-container'>
           <button onClick={increaseFill}>행복</button>
           <button onClick={decreaseFill}>불행</button>
